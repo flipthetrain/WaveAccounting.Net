@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "b17fbb8c-74f5-488e-984d-8eb3f71fa837": {
+      "ProjectGuid": "b17fbb8c-74f5-488e-984d-8eb3f71fa837",
+      "DisplayName": "Wave",
+      "ColorIndex": 0
+    },
+    "e27eadd1-0719-4498-9ff0-89c19608d0df": {
+      "ProjectGuid": "e27eadd1-0719-4498-9ff0-89c19608d0df",
+      "DisplayName": "Wave.Schema",
+      "ColorIndex": 1
+    },
+    "c42a031c-db68-4f9f-9218-8efad88bd219": {
+      "ProjectGuid": "c42a031c-db68-4f9f-9218-8efad88bd219",
+      "DisplayName": "Wave.GraphQL",
+      "ColorIndex": 2
+    },
+    "59e8e1bc-c042-4d0a-b98d-764aaf0c9237": {
+      "ProjectGuid": "59e8e1bc-c042-4d0a-b98d-764aaf0c9237",
+      "DisplayName": "Wave.Schema",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
