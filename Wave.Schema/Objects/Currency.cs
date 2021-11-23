@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Wave.GraphQL.Attributes;
 using Wave.Schema.Enums;
 
 namespace Wave.Schema.Objects
 {
+    [SchemaObject]
     public record Currency(CurrencyCode code,//Currency code.
                         string symbol,//Symbol used to denote that a number is a monetary value.
                         string name,//Plain-language representation.

@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Wave.GraphQL.Attributes;
 
 namespace Wave.Schema.Objects
 {
+    [SchemaObject]
     public record ProductCreateInput(string businessId,//The unique identifier for the business.
                                     String name,//Name of the product.
                                     Decimal unitPrice,//Price per unit in the major currency unit (rounded to nearest 5 decimal places with ties going away from zero).

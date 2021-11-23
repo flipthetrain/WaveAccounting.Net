@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Wave.GraphQL.Attributes;
 
 namespace Wave.Schema.Inputs
 {
+    [SchemaInput]
     public record InvoiceCreateItemInput(string productId,//Associated product.
                                         string description,//Override product's description.
                                         decimal quantity,//Number of units (rounded to nearest 8 decimal places with ties going away from zero).

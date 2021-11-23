@@ -7,9 +7,9 @@ using Wave.Schema.Objects;
 
 namespace Wave.Schema.Outputs
 {
-    public record invoiceDeleteOutput(bool didSucceed,//Indicates whether the invoice was successfully deleted.
-InputError[] inputErrors //Mutation validation errors.
-)
+    public record InvoiceDeleteOutput(bool didSucceed,//Indicates whether the invoice was successfully deleted.
+                    InputError[] inputErrors //Mutation validation errors.
+                    )
     {
     }
 }

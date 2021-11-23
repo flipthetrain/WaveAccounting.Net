@@ -1,7 +1,9 @@
-﻿using Wave.Schema.Enums;
+﻿using Wave.GraphQL.Attributes;
+using Wave.Schema.Enums;
 
 namespace Wave.Schema.Inputs
 {
+    [SchemaInput]
     public record InvoiceCreateInput(string businessId,//The unique identifier for the business.
                                     string customerId,//The customer identifier to associate with invoice.
                                     InvoiceCreateStatus status,//Status of the Invoice.

@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Wave.GraphQL.Attributes;
 
 namespace Wave.Schema.Objects
 {
+    [SchemaObject]
     public record Product(string id,//Unique identifier for the product.
                         string name,//Name of the product.
                         string description,//Description of the product.

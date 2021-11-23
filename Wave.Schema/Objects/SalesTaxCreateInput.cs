@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Wave.GraphQL.Attributes;
 
 namespace Wave.Schema.Objects
 {
+    [SchemaObject]
     public record SalesTaxCreateInput(string businessId,//The unique identifier for the business.
                                     String name,//Name of the tax.
                                     String abbreviation,//An short form or code representing the sales tax. Max 10 characters, and MUST BE UNIQUE within business.

@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Wave.GraphQL.Attributes;
 using Wave.Schema.Enums;
 
 namespace Wave.Schema.Objects
 {
+    [SchemaObject]
     public record Account(string id,//Unique identifier for the account.
                         string classicId,//The classic primary key used internally at Wave.
                         string name,//Name of the account.

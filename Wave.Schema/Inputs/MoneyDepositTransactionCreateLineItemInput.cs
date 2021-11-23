@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Wave.GraphQL.Attributes;
 using Wave.Schema.Objects;
 
 namespace Wave.Schema.Inputs
 {
+    [SchemaInput]
     public record MoneyDepositTransactionCreateLineItemInput(string accountId,//ID of the account associated with the line item.
                                                             float amount,//Amount.
                                                             string customerId,//ID of the customer associated with the line item.

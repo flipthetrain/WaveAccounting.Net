@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Wave.GraphQL.Attributes;
 
 namespace Wave.Schema.Objects
 {
+    [SchemaObject]
     public record Customer(string id,//Unique identifier for the customer.
                             string name,//Name or business name of the customer.
                             Address address,//Address of the customer.

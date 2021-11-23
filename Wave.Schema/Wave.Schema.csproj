@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Wave.GraphQL\Wave.GraphQL.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Wave.GraphQL.Attributes;
 using Wave.Schema.Enums;
-using Wave.Schema.Objects;
 
 namespace Wave.Schema.Objects
 {
+    [SchemaObject]
     public record Business(string id,//The unique identifier for the business.
                             string name,//The name of the business.
                             bool isPersonal,//Is the business a personal one with limited functionality compared to regular businesses.

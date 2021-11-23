@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Wave.GraphQL.Attributes;
 using Wave.Schema.Enums;
 
 namespace Wave.Schema.Inputs
 {
+    [SchemaInput]
     public record CustomerPatchInput(string id,//The unique identifier for the customer.
                                     string name,//Name or business name of the customer.
                                     string firstName,//First name of the principal contact.

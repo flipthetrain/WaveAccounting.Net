@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Wave.GraphQL.Attributes;
 using Wave.Schema.Enums;
 
 namespace Wave.Schema.Objects
 {
+    [SchemaObject]
     public record Invoice(string id,//Unique identifier for the invoice.
                             DateTime createdAt,//When the invoice was created.
                             DateTime modifiedAt,//When the invoice was last modified.
