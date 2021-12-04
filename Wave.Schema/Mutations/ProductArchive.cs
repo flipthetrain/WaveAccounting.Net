@@ -1,10 +1,10 @@
-﻿using Wave.GraphQL.Attributes;
+﻿using Wave.Schema.Attributes;
 using Wave.Schema.Inputs;
 using Wave.Schema.Outputs;
 
 namespace Wave.Schema.Mutations
 {
-    [SchemaMutationAttribute]
+    [SchemaMutation]
     public record ProductArchive(ProductArchiveInput input, ProductArchiveOutput productArchive)
     {
     }

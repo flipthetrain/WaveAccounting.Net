@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Wave.GraphQL.Attributes;
+﻿using Wave.Schema.Attributes;
 
 namespace Wave.Schema.Inputs
 {
@@ -14,7 +9,7 @@ namespace Wave.Schema.Inputs
                                         decimal rate,//The current rate, as a decimal (e.g. 0.15 represents 15%; rounded to nearest 6 decimal places with ties going away from zero).
                                         string description,//User defined description for the sales tax.
                                         string taxNumber,//The tax's issued identification number from a taxing authority.
-                                        bool  showTaxNumberOnInvoices,//Display tax number beside the tax name on an invoice.
+                                        bool showTaxNumberOnInvoices,//Display tax number beside the tax name on an invoice.
                                         bool isCompound,//Is a compound tax, or stacked tax. This tax is calculated on top of the subtotal and other tax amounts.
                                         bool isRecoverable//Is a recoverable tax. It is recoverable if you can deduct the tax that you as a business paid from the tax that you have collected.
                                         )

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Wave.GraphQL.Attributes
+namespace Wave.Schema.Responses
 {
-    public class SchemaMutationAttribute : Attribute
+    public record Businesses(Objects.BusinessConnection businesses)
     {
     }
 }

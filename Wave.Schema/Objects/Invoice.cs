@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Wave.GraphQL.Attributes;
+﻿using Wave.Schema.Attributes;
 using Wave.Schema.Enums;
 
 namespace Wave.Schema.Objects
@@ -12,7 +7,7 @@ namespace Wave.Schema.Objects
     public record Invoice(string id,//Unique identifier for the invoice.
                             DateTime createdAt,//When the invoice was created.
                             DateTime modifiedAt,//When the invoice was last modified.
-                            //InvoiceSource source,//Entity that was the precursor to the invoice.
+                                                //InvoiceSource source,//Entity that was the precursor to the invoice.
                             string pdfUrl,//URL to access PDF representation of the invoice.
                             string viewUrl,//URL to view the invoice online as seen by a customer.
                             InvoiceStatus status,//Status of the Invoice.

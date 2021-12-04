@@ -1,4 +1,4 @@
-﻿using Wave.GraphQL.Attributes;
+﻿using Wave.Schema.Attributes;
 using Wave.Schema.Enums;
 
 namespace Wave.Schema.Objects

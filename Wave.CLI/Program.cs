@@ -1,6 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
-using Wave.GraphQL;
+﻿//using Wave.GraphQL.Engines;
 
-Console.WriteLine("Hello, World!");
-string businessQuery=new QueryEngine().generateQuery<Wave.Schema.Queries.Business>();
+//var business=PHHOA.GetAllBusinesses(1, 10);
+
+//var businessList = business.ToList();
+
+using Wave.GraphQL.Engines;
+using Wave.Schema.Queries;
+
+string query=QueryEngine.generateQuery<Businesses>();
+
+
+int i = 0;
 
